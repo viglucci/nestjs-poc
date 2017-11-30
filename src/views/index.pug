@@ -1,0 +1,10 @@
+html
+  head
+    title= "NestJS POC"
+  body
+    h1= "Hello World"
+    if user
+        pre= JSON.stringify(user, null, 2)
+        a(href=logoutUrl)= "Logout"
+    else
+        a(href=loginUrl)= "Login"
